@@ -1,0 +1,35 @@
+{
+  "experiment": "R06-A_PAIR_FEATURES",
+  "global_oof_auc": 0.9588278590424727,
+  "mean_fold_auc": 0.9588338195129221,
+  "std_fold_auc": 0.0005203712404457449,
+  "fold_auc": [
+    0.9588697898992848,
+    0.9579162164915181,
+    0.9595228534895401,
+    0.958837040855254,
+    0.9590231968290135
+  ],
+  "best_iterations": [
+    862,
+    713,
+    855,
+    900,
+    520
+  ],
+  "gain_vs_baseline": 0.00016164904247273348,
+  "gain_vs_r03b1": -2.5950957527332008e-05,
+  "gain_vs_r04a": -0.0006710809575273258,
+  "feature_family": [
+    "pairs"
+  ],
+  "target_encoding": null,
+  "smoothing": 20.0,
+  "n_train": 699635,
+  "n_test": 299844,
+  "n_splits": 5,
+  "seed": 42,
+  "device": "cpu",
+  "tree_method": "hist",
+  "runtime_minutes": 34.37371208270391
+}

@@ -1,0 +1,35 @@
+{
+  "experiment": "R04-C_FREQUENCY",
+  "global_oof_auc": 0.9594863658166196,
+  "mean_fold_auc": 0.9594884310641788,
+  "std_fold_auc": 0.0005650593422193886,
+  "fold_auc": [
+    0.9596711288863446,
+    0.9584840055739885,
+    0.9602293264274275,
+    0.9594970795321403,
+    0.9595606149009936
+  ],
+  "best_iterations": [
+    1141,
+    970,
+    987,
+    821,
+    866
+  ],
+  "gain_vs_baseline": 0.0008201558166196499,
+  "gain_vs_r03b1": 0.0006325558166195844,
+  "gain_vs_r04a": -1.2574183380409387e-05,
+  "feature_family": [
+    "frequency"
+  ],
+  "target_encoding": null,
+  "smoothing": 20.0,
+  "n_train": 699635,
+  "n_test": 299844,
+  "n_splits": 5,
+  "seed": 42,
+  "device": "cpu",
+  "tree_method": "hist",
+  "runtime_minutes": 35.46118015050888
+}

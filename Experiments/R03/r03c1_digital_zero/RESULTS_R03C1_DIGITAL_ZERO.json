@@ -1,0 +1,53 @@
+{
+  "experiment": "R03-C1",
+  "description": "Digital zero count only",
+  "baseline_auc": 0.95866621,
+  "global_oof_auc": 0.958823094542663,
+  "absolute_gain": 0.0001568845426630494,
+  "mean_fold_auc": 0.9588302410926733,
+  "std_fold_auc": 0.0007182625251034537,
+  "baseline_features": 21,
+  "total_features": 22,
+  "added_features": [
+    "digital_zero_count"
+  ],
+  "digital_columns": [
+    "Inflight wifi service",
+    "Ease of Online booking",
+    "Online boarding"
+  ],
+  "seed": 42,
+  "n_splits": 5,
+  "fold_results": [
+    {
+      "fold": 1,
+      "auc": 0.9590270198511192,
+      "best_iteration": 861,
+      "time_seconds": 222.8488986492157
+    },
+    {
+      "fold": 2,
+      "auc": 0.9576928671291149,
+      "best_iteration": 903,
+      "time_seconds": 229.3261058330536
+    },
+    {
+      "fold": 3,
+      "auc": 0.9596617551387665,
+      "best_iteration": 906,
+      "time_seconds": 229.95194816589355
+    },
+    {
+      "fold": 4,
+      "auc": 0.9587545936377109,
+      "best_iteration": 779,
+      "time_seconds": 209.42499470710754
+    },
+    {
+      "fold": 5,
+      "auc": 0.9590149697066546,
+      "best_iteration": 558,
+      "time_seconds": 158.63933563232422
+    }
+  ]
+}

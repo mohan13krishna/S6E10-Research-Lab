@@ -1,0 +1,84 @@
+{
+  "experiment": "R04-A",
+  "description": "Decimal digit decomposition of Age, Flight Distance, Departure Delay in Minutes, Arrival Delay in Minutes",
+  "baseline_auc": 0.95866621,
+  "current_best_auc": 0.95885381,
+  "global_oof_auc": 0.9594989439067351,
+  "gain_vs_r00": 0.0008327339067351058,
+  "gain_vs_current_best": 0.0006451339067350403,
+  "mean_fold_auc": 0.9595115136617925,
+  "std_fold_auc": 0.0006886762864763581,
+  "digit_source_columns": [
+    "Age",
+    "Flight Distance",
+    "Departure Delay in Minutes",
+    "Arrival Delay in Minutes"
+  ],
+  "digit_features": [
+    "Age_digit1",
+    "Age_digit2",
+    "Flight Distance_digit1",
+    "Flight Distance_digit2",
+    "Flight Distance_digit3",
+    "Flight Distance_digit4",
+    "Departure Delay in Minutes_digit1",
+    "Departure Delay in Minutes_digit2",
+    "Departure Delay in Minutes_digit3",
+    "Arrival Delay in Minutes_digit1",
+    "Arrival Delay in Minutes_digit2",
+    "Arrival Delay in Minutes_digit3"
+  ],
+  "digit_feature_count": 12,
+  "total_features": 33,
+  "seed": 42,
+  "n_splits": 5,
+  "xgb_params": {
+    "objective": "binary:logistic",
+    "eval_metric": "auc",
+    "n_estimators": 5000,
+    "learning_rate": 0.03,
+    "max_depth": 8,
+    "min_child_weight": 5,
+    "subsample": 0.85,
+    "colsample_bytree": 0.85,
+    "gamma": 0,
+    "reg_alpha": 0,
+    "reg_lambda": 1,
+    "tree_method": "hist",
+    "device": "cuda",
+    "random_state": 42,
+    "n_jobs": 4
+  },
+  "fold_results": [
+    {
+      "fold": 1,
+      "auc": 0.9595010340552785,
+      "best_iteration": 612,
+      "time_seconds": 142.08335852622986
+    },
+    {
+      "fold": 2,
+      "auc": 0.9584731338864163,
+      "best_iteration": 988,
+      "time_seconds": 211.72247695922852
+    },
+    {
+      "fold": 3,
+      "auc": 0.9604008873189227,
+      "best_iteration": 905,
+      "time_seconds": 198.69356441497803
+    },
+    {
+      "fold": 4,
+      "auc": 0.9595044971443965,
+      "best_iteration": 691,
+      "time_seconds": 155.76555371284485
+    },
+    {
+      "fold": 5,
+      "auc": 0.9596780159039484,
+      "best_iteration": 580,
+      "time_seconds": 139.55011320114136
+    }
+  ]
+}

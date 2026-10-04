@@ -1,0 +1,52 @@
+{
+  "experiment": "R03-B2",
+  "description": "Service rating structure",
+  "baseline_auc": 0.95866621,
+  "global_oof_auc": 0.9586289023284253,
+  "absolute_gain": -3.7307671574615675e-05,
+  "mean_fold_auc": 0.9586370595391205,
+  "std_fold_auc": 0.0007198704927534846,
+  "baseline_features": 21,
+  "total_features": 26,
+  "added_features": [
+    "rating_mean",
+    "rating_std",
+    "rating_range",
+    "rating_min",
+    "rating_max"
+  ],
+  "seed": 42,
+  "n_splits": 5,
+  "fold_results": [
+    {
+      "fold": 1,
+      "auc": 0.9588742290793029,
+      "best_iteration": 963,
+      "time_seconds": 255.99363040924072
+    },
+    {
+      "fold": 2,
+      "auc": 0.9574871914498337,
+      "best_iteration": 924,
+      "time_seconds": 251.37133359909058
+    },
+    {
+      "fold": 3,
+      "auc": 0.9593983100912098,
+      "best_iteration": 713,
+      "time_seconds": 204.8265233039856
+    },
+    {
+      "fold": 4,
+      "auc": 0.9584853660351775,
+      "best_iteration": 620,
+      "time_seconds": 184.14904046058655
+    },
+    {
+      "fold": 5,
+      "auc": 0.9589402010400793,
+      "best_iteration": 601,
+      "time_seconds": 179.03360295295715
+    }
+  ]
+}

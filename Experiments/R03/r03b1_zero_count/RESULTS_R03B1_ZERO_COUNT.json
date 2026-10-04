@@ -1,0 +1,48 @@
+{
+  "experiment": "R03-B1",
+  "description": "Overall zero rating count only",
+  "baseline_auc": 0.95866621,
+  "global_oof_auc": 0.9588538142916412,
+  "absolute_gain": 0.00018760429164121906,
+  "mean_fold_auc": 0.9588564992468551,
+  "std_fold_auc": 0.0007028708287851374,
+  "baseline_features": 21,
+  "total_features": 22,
+  "added_features": [
+    "zero_rating_count"
+  ],
+  "seed": 42,
+  "n_splits": 5,
+  "fold_results": [
+    {
+      "fold": 1,
+      "auc": 0.9590606845727327,
+      "best_iteration": 880,
+      "time_seconds": 231.33077836036682
+    },
+    {
+      "fold": 2,
+      "auc": 0.9577430145417738,
+      "best_iteration": 638,
+      "time_seconds": 179.18991708755493
+    },
+    {
+      "fold": 3,
+      "auc": 0.9596525180946138,
+      "best_iteration": 707,
+      "time_seconds": 191.82801055908203
+    },
+    {
+      "fold": 4,
+      "auc": 0.9587480523739429,
+      "best_iteration": 873,
+      "time_seconds": 229.1766300201416
+    },
+    {
+      "fold": 5,
+      "auc": 0.9590782266512126,
+      "best_iteration": 652,
+      "time_seconds": 181.03537678718567
+    }
+  ]
+}

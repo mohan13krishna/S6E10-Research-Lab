@@ -1,0 +1,40 @@
+{
+  "experiment": "R05-B_NUMERIC_BUCKET_TE",
+  "global_oof_auc": 0.9117931604756346,
+  "mean_fold_auc": 0.9144245401767879,
+  "std_fold_auc": 0.0027836333505071977,
+  "fold_auc": [
+    0.9180038394618518,
+    0.9160491935912398,
+    0.909835466881223,
+    0.9131062693790397,
+    0.9151279315705847
+  ],
+  "best_iterations": [
+    118,
+    118,
+    118,
+    118,
+    119
+  ],
+  "gain_vs_baseline": -0.04687304952436533,
+  "gain_vs_r03b1": -0.047060649524365394,
+  "gain_vs_r04a": -0.04770577952436539,
+  "feature_family": [
+    "buckets"
+  ],
+  "target_encoding": [
+    "Age_bucket5",
+    "FlightDistance_bucket25",
+    "DepartureDelay_bucket10",
+    "ArrivalDelay_bucket10"
+  ],
+  "smoothing": 20.0,
+  "n_train": 699635,
+  "n_test": 299844,
+  "n_splits": 5,
+  "seed": 42,
+  "device": "cpu",
+  "tree_method": "hist",
+  "runtime_minutes": 7.189445924758911
+}

@@ -1,0 +1,44 @@
+{
+  "experiment": "R05-C_CATEGORICAL_PLUS_NUMERIC_TE",
+  "global_oof_auc": 0.5200262893885045,
+  "mean_fold_auc": 0.5881542463371748,
+  "std_fold_auc": 0.14571736411633204,
+  "fold_auc": [
+    0.5134133601247288,
+    0.8795684215333451,
+    0.5135602272698123,
+    0.5180638998934048,
+    0.516165322864583
+  ],
+  "best_iterations": [
+    15,
+    653,
+    15,
+    9,
+    9
+  ],
+  "gain_vs_baseline": -0.4386399206114955,
+  "gain_vs_r03b1": -0.43882752061149555,
+  "gain_vs_r04a": -0.43947265061149554,
+  "feature_family": [
+    "buckets"
+  ],
+  "target_encoding": [
+    "Gender",
+    "Customer Type",
+    "Type of Travel",
+    "Class",
+    "Age_bucket5",
+    "FlightDistance_bucket25",
+    "DepartureDelay_bucket10",
+    "ArrivalDelay_bucket10"
+  ],
+  "smoothing": 20.0,
+  "n_train": 699635,
+  "n_test": 299844,
+  "n_splits": 5,
+  "seed": 42,
+  "device": "cpu",
+  "tree_method": "hist",
+  "runtime_minutes": 7.350373796621958
+}

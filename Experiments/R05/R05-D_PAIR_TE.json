@@ -1,0 +1,56 @@
+{
+  "experiment": "R05-D_PAIR_TE",
+  "global_oof_auc": 0.6499234188034996,
+  "mean_fold_auc": 0.8836230103728943,
+  "std_fold_auc": 0.015562803435519683,
+  "fold_auc": [
+    0.8683118766516453,
+    0.9131258838584946,
+    0.8738316933747101,
+    0.8819714998675114,
+    0.8808740981121096
+  ],
+  "best_iterations": [
+    4,
+    387,
+    4,
+    0,
+    0
+  ],
+  "gain_vs_baseline": -0.3087427911965004,
+  "gain_vs_r03b1": -0.30893039119650045,
+  "gain_vs_r04a": -0.30957552119650045,
+  "feature_family": [
+    "pairs"
+  ],
+  "target_encoding": [
+    [
+      "Class",
+      "Type of Travel"
+    ],
+    [
+      "Customer Type",
+      "Type of Travel"
+    ],
+    [
+      "Class",
+      "Customer Type"
+    ],
+    [
+      "Class",
+      "Gender"
+    ],
+    [
+      "Type of Travel",
+      "Gender"
+    ]
+  ],
+  "smoothing": 20.0,
+  "n_train": 699635,
+  "n_test": 299844,
+  "n_splits": 5,
+  "seed": 42,
+  "device": "cpu",
+  "tree_method": "hist",
+  "runtime_minutes": 7.393147929509481
+}

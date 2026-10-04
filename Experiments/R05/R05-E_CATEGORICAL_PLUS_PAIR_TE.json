@@ -1,0 +1,60 @@
+{
+  "experiment": "R05-E_CATEGORICAL_PLUS_PAIR_TE",
+  "global_oof_auc": 0.6783551984223202,
+  "mean_fold_auc": 0.8971875907461975,
+  "std_fold_auc": 0.019062369967034757,
+  "fold_auc": [
+    0.9129233173819177,
+    0.8734881049646027,
+    0.9098256836453738,
+    0.8743938242671252,
+    0.9153070234719681
+  ],
+  "best_iterations": [
+    833,
+    26,
+    886,
+    32,
+    910
+  ],
+  "gain_vs_baseline": -0.2803110115776798,
+  "gain_vs_r03b1": -0.28049861157767986,
+  "gain_vs_r04a": -0.28114374157767985,
+  "feature_family": [
+    "pairs"
+  ],
+  "target_encoding": [
+    "Gender",
+    "Customer Type",
+    "Type of Travel",
+    "Class",
+    [
+      "Class",
+      "Type of Travel"
+    ],
+    [
+      "Customer Type",
+      "Type of Travel"
+    ],
+    [
+      "Class",
+      "Customer Type"
+    ],
+    [
+      "Class",
+      "Gender"
+    ],
+    [
+      "Type of Travel",
+      "Gender"
+    ]
+  ],
+  "smoothing": 20.0,
+  "n_train": 699635,
+  "n_test": 299844,
+  "n_splits": 5,
+  "seed": 42,
+  "device": "cpu",
+  "tree_method": "hist",
+  "runtime_minutes": 17.97904984553655
+}

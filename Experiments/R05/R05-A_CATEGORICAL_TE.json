@@ -1,0 +1,38 @@
+{
+  "experiment": "R05-A_CATEGORICAL_TE",
+  "global_oof_auc": 0.6972149398370793,
+  "mean_fold_auc": 0.902097224359137,
+  "std_fold_auc": 0.0008456090642715316,
+  "fold_auc": [
+    0.9033482943373949,
+    0.9020871313624979,
+    0.9007430612011745,
+    0.9024452210121213,
+    0.9018624138824963
+  ],
+  "best_iterations": [
+    212,
+    213,
+    220,
+    213,
+    248
+  ],
+  "gain_vs_baseline": -0.2614512701629207,
+  "gain_vs_r03b1": -0.26163887016292076,
+  "gain_vs_r04a": -0.26228400016292075,
+  "feature_family": [],
+  "target_encoding": [
+    "Gender",
+    "Customer Type",
+    "Type of Travel",
+    "Class"
+  ],
+  "smoothing": 20.0,
+  "n_train": 699635,
+  "n_test": 299844,
+  "n_splits": 5,
+  "seed": 42,
+  "device": "cpu",
+  "tree_method": "hist",
+  "runtime_minutes": 8.277148032188416
+}
