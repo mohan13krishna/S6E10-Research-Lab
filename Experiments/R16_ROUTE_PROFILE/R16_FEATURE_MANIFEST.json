@@ -1,0 +1,113 @@
+{
+  "experiment": "R16_ROUTE_PROFILE",
+  "data_root": "/kaggle/input/datasets/mohankrishnathalla/s6e10-research-lab",
+  "train_path": "/kaggle/input/datasets/mohankrishnathalla/s6e10-research-lab/Dataset/train.csv",
+  "test_path": "/kaggle/input/datasets/mohankrishnathalla/s6e10-research-lab/Dataset/test.csv",
+  "historical_r04d_path": "/kaggle/input/datasets/mohankrishnathalla/s6e10-research-lab/Experiments/R04/R04-D_DIGIT_PLUS_FREQUENCY_OOF.csv",
+  "train_shape": [
+    699635,
+    23
+  ],
+  "test_shape": [
+    299844,
+    22
+  ],
+  "baseline_feature_count": 41,
+  "original_feature_count": 21,
+  "digit_feature_count": 12,
+  "frequency_feature_count": 8,
+  "route_profile_feature_count": 20,
+  "route_profile_total_feature_count": 63,
+  "route_profile_columns": [
+    "FD_route_mean__Age",
+    "FD_route_mean__Inflight wifi service",
+    "FD_route_mean__Departure/Arrival time convenient",
+    "FD_route_mean__Ease of Online booking",
+    "FD_route_mean__Gate location",
+    "FD_route_mean__Food and drink",
+    "FD_route_mean__Online boarding",
+    "FD_route_mean__Seat comfort",
+    "FD_route_mean__Inflight entertainment",
+    "FD_route_mean__On-board service",
+    "FD_route_mean__Leg room service",
+    "FD_route_mean__Baggage handling",
+    "FD_route_mean__Checkin service",
+    "FD_route_mean__Cleanliness",
+    "FD_route_mean__Departure Delay in Minutes",
+    "FD_route_mean__Arrival Delay in Minutes",
+    "FD_route_mean__Gender",
+    "FD_route_mean__Customer Type",
+    "FD_route_mean__Type of Travel",
+    "FD_route_mean__Class"
+  ],
+  "frequency_columns": [
+    "Type of Travel",
+    "Inflight entertainment",
+    "Inflight wifi service",
+    "Seat comfort",
+    "Online boarding",
+    "Leg room service",
+    "Cleanliness",
+    "On-board service"
+  ],
+  "digit_source_columns": [
+    "Age",
+    "Flight Distance",
+    "Departure Delay in Minutes",
+    "Arrival Delay in Minutes"
+  ],
+  "categorical_columns": [
+    "Gender",
+    "Customer Type",
+    "Type of Travel",
+    "Class"
+  ],
+  "numeric_columns": [
+    "Age",
+    "Flight Distance",
+    "Inflight wifi service",
+    "Departure/Arrival time convenient",
+    "Ease of Online booking",
+    "Gate location",
+    "Food and drink",
+    "Online boarding",
+    "Seat comfort",
+    "Inflight entertainment",
+    "On-board service",
+    "Leg room service",
+    "Baggage handling",
+    "Checkin service",
+    "Cleanliness",
+    "Departure Delay in Minutes",
+    "Arrival Delay in Minutes"
+  ],
+  "route_key": "Flight Distance",
+  "target_encoding": {
+    "enabled": true,
+    "smoothing": 20.0,
+    "inner_folds": 5,
+    "leakage_safe": true,
+    "outer_fold_only": true
+  },
+  "seed": 42,
+  "outer_folds": 5,
+  "xgboost_version": "3.4.1",
+  "xgb_parameters": {
+    "objective": "binary:logistic",
+    "eval_metric": "auc",
+    "n_estimators": 5000,
+    "learning_rate": 0.03,
+    "max_depth": 8,
+    "min_child_weight": 5,
+    "subsample": 0.85,
+    "colsample_bytree": 0.85,
+    "gamma": 0,
+    "reg_alpha": 0,
+    "reg_lambda": 1,
+    "tree_method": "hist",
+    "device": "cuda",
+    "random_state": 42,
+    "n_jobs": 4,
+    "early_stopping_rounds": 200
+  }
+}
