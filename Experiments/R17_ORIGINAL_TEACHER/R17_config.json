@@ -1,0 +1,45 @@
+{
+  "seed": 42,
+  "n_splits": 5,
+  "original_shape": [
+    129880,
+    22
+  ],
+  "competition_train_shape": [
+    699635,
+    23
+  ],
+  "competition_test_shape": [
+    299844,
+    22
+  ],
+  "teacher_auc_on_competition": 0.9547198492866374,
+  "teacher_best_iteration": -1,
+  "xgb_params": {
+    "objective": "binary:logistic",
+    "eval_metric": "auc",
+    "n_estimators": 5000,
+    "learning_rate": 0.03,
+    "max_depth": 8,
+    "min_child_weight": 5,
+    "subsample": 0.85,
+    "colsample_bytree": 0.85,
+    "gamma": 0,
+    "reg_alpha": 0,
+    "reg_lambda": 1,
+    "tree_method": "hist",
+    "device": "cuda",
+    "random_state": 42,
+    "n_jobs": 4
+  },
+  "recovered_frequency_features": [
+    "Type of Travel",
+    "Inflight entertainment",
+    "Inflight wifi service",
+    "Seat comfort",
+    "Online boarding",
+    "Leg room service",
+    "Cleanliness",
+    "On-board service"
+  ]
+}
